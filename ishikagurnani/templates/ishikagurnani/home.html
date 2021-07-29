@@ -1,0 +1,199 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-
+    EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+    crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'ishikagurnani/styles.css' %}">
+    <title>ishika gurnani.</title>
+</head>
+<body>
+  <!-- NavBar -->
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-color">
+    <div class="container-fluid">
+      <a class="navbar-brand brand-style px-4" href="#">ishika gurnani.</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav me-auto">
+        </ul>
+        <ul class="navbar-nav d-flex">
+          <li class="nav-item px-3">
+            <a class="nav-link secondary-color nav-item-style" aria-current="page" href="#">home</a>
+          </li>
+          <li class="nav-item px-3">
+            <a class="nav-link secondary-color nav-item-style" href="#aboutme-page">about</a>
+          </li>
+          <li class="nav-item px-3">
+            <a class="nav-link secondary-color nav-item-style"  href="#mywork-page">my work</a>
+          </li>
+          <li class="nav-item px-3">
+            <a class="nav-link secondary-color nav-item-style" href="./contact">contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HomePage -->
+  <div class="container main-container homepage" id="home-page">
+    <div class="row">
+      <h3 class="text-center element-style hello-style">Hello,</h3>
+    </div>
+    <div class="row">
+      <h3 class="text-center secondary-color name-bold">I'm Ishika Gurnani</h3>
+    </div>
+    <div class="row">
+      <h3 class="text-center explain-style">An Undergraduate Computer Science Student</h3>
+    </div>
+    <div class="row">
+      <a href="#aboutme-page" class="text-center element-style arrow-style">
+        <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- AboutMe -->
+  <div class="container" id="aboutme-page">
+    <div class="row about-me">
+      <h3 class="aboutme-style">about me</h3>
+      <div class="col-md-4 myimage">
+        <img src="{% static 'ishikagurnani/assets/myimage.jpg' %}" alt="myimage">
+      </div>
+      <div class="col-md-6 myinfo">
+        <p class="abouttext-style" style="margin-bottom: 5vh;">
+          I’m a fast learner and can easily adapt to different
+          circumstances. Hard worker, creative, and flexible team
+          player with a strong attention to details. Eager for a new
+          challenge that would further enhance my experience and
+          skills which are more of a challenge type so that I could be
+          an efficient & well rounded professional in my future work
+          life. My objective is to constantly learn and gain more
+          knowledge from every opportunity that is given to me.
+        </p>
+        <a href="./contact" role="button" class="btn-in-touch btn-default">Get in Touch</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MyWork -->
+  <div class="container mx-auto" id="mywork-page">
+    <h3 class="recent-works-text">recent works</h3>
+    <div class="row mywork">
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem; height: 19rem;">
+          <!-- <img src="https://i.imgur.com/ZTkt4I5.jpg" class="card-img-top" alt="..."> -->
+          <div class="card-body">
+            <h5 class="card-title">Sentiment Analysis</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Python</h6>
+            <p class="card-text"> A Natural Language Processing project that uses a number of 
+              algorithms to determine if a tweet is positive or negative.</p>
+            <!-- <a href="#" class="btn mr-2"><i class="fas fa-link"></i> Visit Site</a> -->
+            <a href="https://github.com/ishikagurnani/sentiment-analysis" target="_blank" class="btn "><i class="fab fa-github github-btn"></i> Github</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem; height: 19rem;">
+          <!-- <img src="https://i.imgur.com/ZTkt4I5.jpg" class="card-img-top" alt="..."> -->
+          <div class="card-body">
+            <h5 class="card-title">Bankruptcy Prediction</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Python</h6>
+            <p class="card-text">A project that uses Machine Learning to predict whether 
+              or not a company will go bankrupt.</p>
+            <!-- <a href="#" class="btn mr-2"><i class="fas fa-link"></i> Visit Site</a> -->
+            <a href="https://github.com/ishikagurnani/predicting-company-bankruptcy" target="_blank" class="btn "><i class="fab fa-github github-btn"></i> Github</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem; height: 19rem;">
+          <!-- <img src="https://i.imgur.com/ZTkt4I5.jpg" class="card-img-top" alt="..."> -->
+          <div class="card-body">
+            <h5 class="card-title">Bitetastic</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Dart</h6>
+            <p class="card-text">Bitetastic is an application that specializes on food recipes. 
+              This application is made using Flutter & Firebase.</p>
+            <!-- <a href="#" class="btn mr-2"><i class="fas fa-link"></i> Visit Site</a> -->
+            <a href="https://github.com/ishikagurnani/flutter-bitetastic" target="_blank" class="btn "><i class="fab fa-github github-btn"></i> Github</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem; height: 19rem;">
+          <!-- <img src="https://i.imgur.com/ZTkt4I5.jpg" class="card-img-top" alt="..."> -->
+          <div class="card-body">
+            <h5 class="card-title">TicTacToe</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Python</h6>
+            <p class="card-text">Remade the famous game called Tic Tac Toe using Python.</p>
+            <!-- <a href="#" class="btn mr-2"><i class="fas fa-link"></i> Visit Site</a> -->
+            <a href="#" class="btn "><i class="fab fa-github github-btn"></i> Github</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem; height: 19rem;">
+          <!-- <img src="https://i.imgur.com/ZTkt4I5.jpg" class="card-img-top" alt="..."> -->
+          <div class="card-body">
+            <h5 class="card-title">Hotel Bookings Cancellation</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Python</h6>
+            <p class="card-text">A project that uses Machine Learning algorithms to predict whether or not a customer would cancel a hotel reservation.</p>
+            <!-- <a href="#" class="btn mr-2"><i class="fas fa-link"></i> Visit Site</a> -->
+            <a href="#" class="btn "><i class="fab fa-github github-btn"></i> Github</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">Copyright &copy; ishikagurnani.</p>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <ul class="social-icons">
+            <li><a class="instagram" href="https://www.instagram.com/ishika.gurnani/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a class="linkedin" href="https://www.linkedin.com/in/ishika-gurnani-49b3601b5" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+            <li><a class="github" href="https://github.com/ishikagurnani" target="_blank"><i class="fab fa-github"></i></a></li>    
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+  crossorigin="anonymous"></script>
+  <!-- <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script> -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src="https://unpkg.com/smoothscroll-polyfill/dist/smoothscroll.min.js"></script>
+  <script src="https://unpkg.com/smoothscroll-anchor-polyfill"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+  <!-- <script src="../javascript/script.js"></script> -->
+  <!-- <script src="../javascript/scroll.js"></script> -->
+  <script>
+  $(window).load(function() {
+      $(".preloader").delay(5000).fadeOut("slow");
+      $(".overlayer").delay(5000).fadeOut("slow");
+    })
+  </script>
+</body>
+</html>

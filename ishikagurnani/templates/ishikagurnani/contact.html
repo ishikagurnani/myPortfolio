@@ -1,0 +1,17 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'ishikagurnani/styles.css' %}">
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
+ <!-- Get in Touch -->
+  <div class="container getintouch" id="get-in-touch" style="margin-top: 60px;">
+    <div style="text-align:center">
+      <h2>get in touch</h2>
+    </div>
+    <div class="form-row align-items-center" style="margin: auto; width: 50%; margin-top: 30px;">
+        <form action="" method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</div>
