@@ -118,8 +118,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
-STATIC_URL = '/static/'
-STATIC_ROOT = '/public_html/websitepersonal/personalWebsite/ishikagurnani'
+STATIC_URL = 'static/'
+STATIC_ROOT = 'public_html/websitepersonal/personalWebsite/ishikagurnani'
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 DEFAULT_FROM_EMAIL = 'testing@example.com'
